@@ -74,11 +74,16 @@ agent = SemanticSearchAgent(tool_name, tool_description, prompt, graph, retrieve
 # Configuración de la página
 st.set_page_config(page_title="Chatbot de aplicaciones", page_icon="🤖", layout="wide")
 
-# Estilos personalizados
+st.title("Chatbot de aplicaciones")
+st.subheader("Este chatbot te ayudará a encontrar información sobre aplicaciones y sus descripciones técnicas.")
+
+st.divider()
+st.text("Aplicaciones:\n- Customer selector\n- Product selector\n- Price selector\n- Discount selector")
+st.divider()
 
 if "messages" not in st.session_state:
     st.session_state.messages = [
-        {"role": "assistant", "content": "Hola, soy el chatbot de aplicaciones ¿Cómo puedo ayudarte?"},
+        {"role": "assistant", "content": "Hola, ¿Cómo puedo ayudarte?"},
     ]
 
 def handle_submit(message):
