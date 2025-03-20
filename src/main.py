@@ -78,7 +78,7 @@ st.title("Chatbot de aplicaciones")
 st.subheader("Este chatbot te ayudará a encontrar información sobre aplicaciones y sus descripciones técnicas.")
 
 st.divider()
-st.text("Aplicaciones:\n- Customer selector\n- Product selector\n- Price selector\n- Discount selector")
+st.text("Aplicaciones:\n- Customer selector\n- Best Product Planner App\n- Smart pricing App\n- Discount estimator App")
 st.divider()
 
 if "messages" not in st.session_state:
